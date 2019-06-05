@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: phcherne-dualDeploy-test # NOTE: update this with your service name
+service: phcherne-dualDeploy-blob-test # NOTE: update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -37,17 +37,17 @@ functions:
   hello:
     handler: entryPoint.in
     events:
-      - http: true
+      - blob:
         x-azure-settings:
-          authLevel : anonymous
+          name: req
+          path: test-items/{name}
+          connection: AzureWebJobsStorage
       - http: true
         x-azure-settings:
           direction: out
           name: res
-      - blob:
-        x-azure-settings:
-          name: blobIn
-          direction: in
+      
+          # direction: in
 
 # The following are a few examples of other events you can configure:
 #

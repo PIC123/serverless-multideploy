@@ -11,11 +11,13 @@
 #
 # Happy Coding!
 
-service: phcherne-dualDeploy-test2 # NOTE: update this with your service name
+service: phcherne-dualDeploy-blob-test # NOTE: update this with your service name
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
 # frameworkVersion: "=X.X.X"
+custom: 
+  bucketName: test-bucket-phcherne
 
 provider:
   name: aws
@@ -43,7 +45,7 @@ provider:
 
 # you can define service wide environment variables here
 #  environment:
-#    variable1: value1
+#    BUCKET: test-bucket
 
 # you can add packaging information here
 #package:
@@ -58,9 +60,10 @@ functions:
   hello:
     handler: entryPoint.in
     events:
-      - http:
-          path: hi
-          method: get
+      # - http:
+      #     path: hi
+      #     method: get
+      - s3: ${self:custom.bucketName}
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
@@ -94,12 +97,12 @@ functions:
 #      variable2: value2
 
 # you can add CloudFormation resource templates here
-#resources:
+# resources:
 #  Resources:
 #    NewResource:
 #      Type: AWS::S3::Bucket
 #      Properties:
-#        BucketName: my-new-bucket
+#        BucketName: test-bucket2
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"

@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        // "name": "Debug",
+        // "type": "node",
+        // "request": "launch",
+        // "cwd": "${workspaceRoot}",
+        // "runtimeExecutable": "npm",
+        // "runtimeArgs": [
+        //     "run-script",
+        //     "debug"
+        // ],
+        // "port": 5858
+        "type": "node",
+        "request": "launch",
+        "name": "Debug Serverless",
+        "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
+        "args": [
+            "invoke",
+            "local",
+            "-f",
+            "hello",
+            "--data",
+            "{}"
+        ]
+    }]
+}

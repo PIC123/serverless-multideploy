@@ -1,0 +1,33 @@
+{
+  "name": "myappaws",
+  "version": "1.0.0",
+  "description": "MultiDeploy functions sample for the Serverless framework",
+  "main": "entryPoint.js",
+  "dependencies": {
+    "serverless-azure-functions": "^0.7.0"
+  },
+  "devDependencies": {
+    "serverless": "^1.43.0",
+    "serverless-offline": "^4.10.6"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/serverless offline -s dev",
+    "debug": "set SLS_DEBUG=* && node --inspect ./node_modules/.bin/serverless-webpack offline -s dev",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PIC123/serverless-multideploy.git"
+  },
+  "keywords": [
+    "aws",
+    "azure",
+    "serverless"
+  ],
+  "author": "Phillip Cherner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PIC123/serverless-multideploy/issues"
+  },
+  "homepage": "https://github.com/PIC123/serverless-multideploy#readme"
+}

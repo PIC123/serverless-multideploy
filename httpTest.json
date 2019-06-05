@@ -1,0 +1,32 @@
+{
+    "req": {
+        "method": "GET",
+        "url": "https://phcherne-dualdeploy-test.azurewebsites.net/api/hello",
+        "originalUrl": "https://phcherne-dualdeploy-test.azurewebsites.net/api/hello",
+        "headers": {
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, deflate, br",
+            "accept-language": "en-US,en;q=0.9,es;q=0.8",
+            "connection": "Keep-Alive",
+            "content-type": "application/json",
+            "host": "phcherne-dualdeploy-test.azurewebsites.net",
+            "max-forwards": "9",
+            "referer": "https://functions.azure.com/ng-min/resources/subscriptions/d36d0808-a967-4f73-9fdc-32ea232fc81d/resourcegroups/phcherne-dualdeploy-test-rg/sites/phcherne-dualdeploy-test/functions/hello?correlationId=419f01fe-af8c&sessionId=e51b9bd766b547d9bd6331465f5e8ba4&frameId=3ef5e479-93c3&ElasticScaleOut=true&appsvc.bladetype=appblade&trustedAuthority=https:%2F%2Fms.portal.azure.com",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+            "origin": "https://functions.azure.com",
+            "x-waws-unencoded-url": "/api/hello",
+            "client-ip": "10.0.128.33:25098",
+            "x-arr-log-id": "47a3e5c5-6be3-4fdf-ab40-bb2ef862e483",
+            "disguised-host": "phcherne-dualdeploy-test.azurewebsites.net",
+            "x-site-deployment-id": "phcherne-dualDeploy-test",
+            "was-default-hostname": "phcherne-dualdeploy-test.azurewebsites.net",
+            "x-original-url": "/api/hello",
+            "x-forwarded-for": "167.220.2.235:57591",
+            "x-arr-ssl": "2048|256|C=US, S=Washington, L=Redmond, O=Microsoft Corporation, OU=Microsoft IT, CN=Microsoft IT TLS CA 4|CN=*.azurewebsites.net",
+            "x-forwarded-proto": "https",
+            "x-appservice-proto": "https"
+        },
+        "query": {},
+        "params": {}
+    }
+}
