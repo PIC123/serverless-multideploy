@@ -2,16 +2,22 @@
     "disabled": false,
     "bindings": [
         {
-            "type": "blobTrigger",
+            "type": "httpTrigger",
             "direction": "in",
             "name": "req",
-            "path": "test-items/{name}",
-            "connection": "AzureWebJobsStorage"
+            "authLevel": "anonymous"
         },
         {
             "type": "http",
             "direction": "out",
             "name": "res"
+        },
+        {
+            "type": "blob",
+            "direction": "in",
+            "name": "blobIn",
+            "path": "incontainer/{name}",
+            "connection": "AzureWebJobsStorage"
         }
     ],
     "entryPoint": "in",
